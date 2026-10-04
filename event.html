@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Event</title>
+</head>
+<body>
+    <header class="situs-header">
+        <a href="index.html" class="logo">KampusEvent</a>
+        <button class="menu-toggle" id="menu-toggle" aria-expanded="false">Menu</button>
+        <nav id="nav-menu" class="nav-menu">
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="events.html" aria-current="page">Event</a></li>
+                <li><a href="daftar.html">Daftar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Daftar event</h1>
+
+            <div class="filter">
+                <button class="chip" data-kategori="semua" aria-pressed="true">Semua</button>
+                <button class="chip" data-kategori="seminar" aria-pressed="false">Seminar</button>
+                <button class="chip" data-kategori="lomba" aria-pressed="false">Lomba</button>
+                <button class="chip" data-kategori="workshop" aria-pressed="false">Workshop</button>
+            </div>
+
+            <label for="cari" class="sr-only">Cari event</label>
+            <input class="cari" id="cari" type="search" placeholder="Cari event, misalnya coding">
+
+            <div class="daftar-event" id="daftar-event"></div>
+        </section>
+    </main>
+
+    <footer class="situs-footer">
+        <p>&copy; 2026 KampusEvent. Dibuat untuk tugas Pemrograman Web.</p>
+    </footer>
+    
+</body>
+</html>
